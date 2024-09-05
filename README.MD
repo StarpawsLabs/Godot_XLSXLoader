@@ -1,5 +1,5 @@
 # Godot_XLSXLoader
-![image]( https://github.com/seeaworld/Godot_XLSXLoader/blob/main/Pic/import_addon_2.png )
+![image]( https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/import_addon_2.png )
 godot XLSX表格文件快读加载器，可以快速加载配置。
 
 下面是项目的示例地址<https://github.com/seeaworld/XLSX_Loader_Example>
