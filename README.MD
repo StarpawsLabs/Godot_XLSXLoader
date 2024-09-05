@@ -10,7 +10,7 @@ godot XLSX表格文件快读加载器，可以快速加载配置。
     * 将项目下载并将其中的addon文件直接复制到你的项目的根目录   
 
     * 在你的项目中启用插件，***每次导入一个EXCEL重启一次编辑器*** 
-    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/Pic/open_addon.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/open_addon.png">
 
     <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/Pic/restart.png">
     * 重启完编辑器后，记得将"res://addons/XLSXLoader/init_xlsx_load.gd"文件作为预加载加入你的游戏。一定要记得加入，否则导出会出错。
