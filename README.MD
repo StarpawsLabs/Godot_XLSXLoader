@@ -7,35 +7,35 @@ godot XLSX表格文件快读加载器，可以快速加载配置。
 ## 下面是使用方法
 1. 导入插件
     * 将项目下载并将其中的addon文件直接复制到你的项目的根目录    
-    <img src="Pic/import_addon_2.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/import_addon_2.png">
     * 在你的项目中启用插件，***每次导入一个EXCEL重启一次编辑器*** 
-    <img src="Pic/open_addon.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/open_addon.png">
 
-    <img src="Pic/restart.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/restart.png">
     * 重启完编辑器后，记得将"res://addons/XLSXLoader/init_xlsx_load.gd"文件作为预加载加入你的游戏。一定要记得加入，否则导出会出错。
-    <img src="Pic/open_auto_start.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/open_auto_start.png">
     * 现在你就可以使用了。详见下文
 
 2. 在编辑器中编辑
    * 在你需要放置xlsx文件的地方右键，在文件管理器中打开
-      <img src="Pic/explorer.png">
+      <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/explorer.png">
    * 然后再文件资源管理器中添加xlsx文件
-   <img src="Pic/create_xlsx.png">
+   <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/create_xlsx.png">
    * 创建文件后，回到godot编辑器中。右键，使用外部编辑器打开。
-   <img src="Pic/open_e.png">
+   <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/open_e.png">
    * 然后编辑。Godot_XLSXLoader的规则详见下文。
    
 3. XLSX文件编写方法
    * XLSX文件的第一行是你的标题，比如姓名，血量，攻击。
    * XLSX文件的第一列是数据的键。当你的数据需要索引时你需要将此数据放在第一列，比如姓名，ID
-    <img src="Pic/use_xy.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/use_xy.png">
    * 插件仅仅支持字符串，浮点，枚举的储存，请不要写别的类型。如果你有别的数据类型需要导入，可以告诉作者，作者试试看
   
-        <img src="Pic/show_table_1.png" >
+        <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/show_table_1.png" >
 4. 游戏内使用方法
    * 举个例子来表示如何使用：
     比如我再xlsx文件中写入了如下内容
-    <img src="Pic/xlsx_show_all.png" >
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/xlsx_show_all.png" >
    * 插件将xlsx文件以 EXCEL 类的方式导入，你需要以EXCEL 类的方式导入及使用
     ```
     @export var data:EXCEL
@@ -56,12 +56,12 @@ func _ready():
 print(data.get_data("表格1"))
 ```
    * 现在已经完成了文件导入，将你的xlsx文件拖动到检查器就可以直接开始读取了。运行游戏，你会看到如下打印：
-    <img src="Pic/show_dic.png">
+    <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/show_dic.png">
     * 是的，读取出来就是一个字典。接下来示例代码将会告诉你如何使用这个字典。
   
         ### 比如，我有一些敌人的数据，需要通过这个字典转换为Resource放在data文件夹。
         表格如下：
-        <img src="Pic/xlsx_show_all.png">
+        <img src="https://github.com/seeaworld/Godot_XLSXLoader/blob/main/pic/xlsx_show_all.png">
         在主场景 main中写如下：
         ```
         #main.gd
